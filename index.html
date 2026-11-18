@@ -199,13 +199,14 @@ article ul.list li { font-size: 18px; line-height: 1.6; font-weight: 300; }
   line-height: 1.4 !important; color: var(--ink) !important; font-weight: 400 !important; margin: 0 !important;
 }
 .ba-shift {
-  align-self: center; justify-self: center; width: 40px; height: 40px; z-index: 1;
-  border-radius: 50%; background: var(--card); border: 1px solid var(--rule);
-  display: flex; align-items: center; justify-content: center; color: var(--accent);
+  align-self: center; justify-self: center; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); background: none; border: none; width: auto; height: auto;
 }
+.ba-shift svg { width: 28px; height: 28px; display: block; }
 @media (max-width: 720px) {
   .ba { grid-template-columns: 1fr; gap: 0; }
-  .ba-shift { width: 36px; height: 36px; margin: -6px auto; transform: rotate(90deg); }
+  .ba-shift { margin: 8px auto; transform: rotate(90deg); }
 }
 
 /* Ideation split: directions left, sketch right (image matches content height) */
