@@ -495,17 +495,17 @@ ul.assume { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap
 ul.assume li { padding: 14px 16px 14px 40px; border-radius: 12px; background: var(--soft); font-size: 15px; line-height: 1.5; color: var(--ink-2); position: relative; }
 ul.assume li::before { content: "?"; position: absolute; left: 14px; top: 14px; width: 18px; height: 18px; border-radius: 50%; background: #fff; color: #c13584; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
 @media (max-width: 900px) { ul.assume { grid-template-columns: 1fr; } }
-/* Section 1: copy + full prototype video (no crop) */
+/* Section 1: copy + full prototype video (no crop; smaller than hero, still prominent) */
 .v1-split {
-  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
-  gap: 36px; align-items: start; margin-top: 8px;
+  display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+  gap: 40px; align-items: start; margin-top: 8px;
 }
 .v1-copy { min-width: 0; }
 .v1-copy > p:first-child { margin-top: 0; }
 .v1-video {
   margin: 0; position: sticky; top: 100px;
   border-radius: 16px; overflow: hidden; background: var(--soft);
-  border: 1px solid var(--rule); width: 100%; max-width: 360px; margin-left: auto;
+  border: 1px solid var(--rule); width: 100%; max-width: 560px; margin-left: auto;
 }
 .v1-video video {
   width: 100%; height: auto; display: block; object-fit: contain; background: #111;
@@ -518,7 +518,7 @@ ul.assume li::before { content: "?"; position: absolute; left: 14px; top: 14px; 
 @media (max-width: 800px) {
   .v1-split { grid-template-columns: 1fr; gap: 24px; }
   .v1-video {
-    position: static; max-width: 320px; margin: 0 auto;
+    position: static; max-width: 480px; margin: 0 auto;
   }
 }
 
